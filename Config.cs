@@ -25,20 +25,8 @@ namespace AdvancedMiniMap
             Main = plugin;
             DebugMessages = Factory.Item<bool>("Enable Debug");
 
-            if (Drawing.RenderMode == RenderMode.Dx11)
-            {
-                Render = new D3D11Renderer(
-                    Main.D11Context,
-                    Main.BrushCache,
-                    new TextFormatCache(Main.D11Context),
-                    new D3D11TextureManager(Main.D11Context, new VpkBrowser()));
-                TextureManager = (D3D11TextureManager)Render.TextureManager;
-            }
-            else
-            {
-                Render = Main.Context.Value.Renderer;
-                TextureManager = Main.Context.Value.Renderer.TextureManager;
-            }
+            Render = Main.Context.Value.Renderer;
+            TextureManager = Main.Context.Value.Renderer.TextureManager;
 
             MiniMapTowerScript = new MiniMapTowerScript(this, "Tower on MiniMap");
         }

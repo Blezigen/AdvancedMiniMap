@@ -9,13 +9,11 @@ namespace AdvancedMiniMap.Utilities
     {
         public static Bitmap Crop(this Image image, Rectangle selection)
         {
-            Bitmap bmp = image as Bitmap;
-
             // Check if it is a bitmap:
-            if (bmp == null) throw new ArgumentException("No valid bitmap");
+            if (!(image is Bitmap bmp)) throw new ArgumentException("No valid bitmap");
 
             // Crop the image:
-            Bitmap cropBmp = bmp.Clone(selection, bmp.PixelFormat);
+            var cropBmp = bmp.Clone(selection, bmp.PixelFormat);
 
             // Release the resources:
             image.Dispose();
@@ -40,7 +38,7 @@ namespace AdvancedMiniMap.Utilities
         public static string GetName(this Database.HudId entityName)
         {
             var name = Enum.GetName(typeof(Database.HudId), entityName);
-            return $@"npc_dota_{name}";
+            return $@"hud_{name}";
         }
     }
 }

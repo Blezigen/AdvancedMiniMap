@@ -87,7 +87,7 @@ namespace AdvancedMiniMap.Scripts.Entities
                     IsAlive = false;
                 }
             }
-            catch (EntityNotFoundException ex)
+            catch (EntityNotFoundException)
             {
                 Health = 0;
                 IsAlive = false;

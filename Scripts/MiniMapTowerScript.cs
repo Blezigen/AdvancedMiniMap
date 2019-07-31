@@ -189,7 +189,6 @@ namespace AdvancedMiniMap.Scripts
             }
         }
 
-        private bool isDraw = false;
         public override void OnDraw(object sender, EventArgs e)
         {
             if (!EnableAltHider && !AltIsDown) return;

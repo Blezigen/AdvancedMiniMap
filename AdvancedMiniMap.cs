@@ -15,31 +15,15 @@ namespace AdvancedMiniMap
     public class AdvancedMiniMap : Plugin
     {
         public Lazy<IServiceContext> Context { get; set; }
-        public ID3D11Context D11Context { get; }
-        public ID3D9Context D9Context { get; set; }
-        public BrushCache BrushCache { get; }
         public IRendererManager Renderer { get; set; }
         public Config Config;
         public Hero Owner;
         public Database Database;
 
         [ImportingConstructor]
-        public AdvancedMiniMap(
-            [Import] Lazy<IServiceContext> context,
-            [Import] Lazy<ID3D11Context> d11Context,
-            [Import] Lazy<BrushCache> brushCache,
-            [Import] Lazy<ID3D9Context> d9Context)
+        public AdvancedMiniMap([Import] Lazy<IServiceContext> context)
         {
             Context = context;
-            if (Drawing.RenderMode == RenderMode.Dx11)
-            {
-                D11Context = d11Context.Value;
-                BrushCache = brushCache.Value;
-            }
-            else
-            {
-                D9Context = d9Context.Value;
-            }
         }
 
         protected override void OnActivate()
