@@ -8,8 +8,6 @@ using Ensage.Common.Menu;
 using Ensage.SDK.Menu;
 using Ensage.SDK.Renderer;
 using SharpDX;
-using SharpDX.Direct2D1.Effects;
-using Color = System.Drawing.Color;
 
 namespace AdvancedMiniMap.Scripts
 {

@@ -48,23 +48,20 @@
     <Reference Include="NLog">
       <HintPath>..\..\..\E\References\NLog.dll</HintPath>
     </Reference>
-    <Reference Include="ODSharpSDK">
-      <HintPath>C:\EnsageSharpTest\Cache\assemblies\ODSharpSDK.dll</HintPath>
+    <Reference Include="PlaySharp.Sentry, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1e7fb7ba433d028b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\E\References\PlaySharp.Sentry.dll</HintPath>
     </Reference>
-    <Reference Include="PlaySharp.Sentry">
-      <HintPath>..\..\..\E\References\PlaySharp.Sentry.dll</HintPath>
+    <Reference Include="PlaySharp.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7e3dc52b16ce4f66, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\E\References\PlaySharp.Service.dll</HintPath>
     </Reference>
-    <Reference Include="PlaySharp.Service">
-      <HintPath>..\..\..\E\References\PlaySharp.Service.dll</HintPath>
-    </Reference>
-    <Reference Include="PlaySharp.Toolkit">
-      <HintPath>..\..\..\E\References\PlaySharp.Toolkit.dll</HintPath>
+    <Reference Include="PlaySharp.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7e3dc52b16ce4f66, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\E\References\PlaySharp.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
       <HintPath>..\..\..\E\References\SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct2D1">
-      <HintPath>..\..\..\E\References\SharpDX.Direct2D1.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Direct3D11">
       <HintPath>..\..\..\E\References\SharpDX.Direct3D11.dll</HintPath>
@@ -72,14 +69,9 @@
     <Reference Include="SharpDX.Direct3D9">
       <HintPath>..\..\..\E\References\SharpDX.Direct3D9.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.DXGI">
-      <HintPath>..\..\..\E\References\SharpDX.DXGI.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Mathematics">
-      <HintPath>..\..\..\E\References\SharpDX.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.XInput">
-      <HintPath>..\..\..\E\References\SharpDX.XInput.dll</HintPath>
+    <Reference Include="SharpDX.Mathematics, Version=3.1.0.0, Culture=neutral, PublicKeyToken=7e3dc52b16ce4f66, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\E\References\SharpDX.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows.Input;
 using Ensage;
 using Ensage.Common;
 using Ensage.Common.Menu;

@@ -1,9 +1,4 @@
-﻿using System;
-using Ensage.Common;
-using Ensage.Common.Objects;
-using SharpDX;
-
-namespace OverlayInformation
+﻿namespace OverlayInformation
 {
     internal class Program
     {

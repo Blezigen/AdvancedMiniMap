@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AdvancedMiniMap.Scripts;
-using Ensage;
 using Ensage.SDK.Menu;
 using Ensage.SDK.Renderer;
-using Ensage.SDK.Renderer.DX11;
-using Ensage.SDK.VPK;
 using SharpDX;
 
 namespace AdvancedMiniMap

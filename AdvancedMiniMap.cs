@@ -3,8 +3,6 @@ using System.ComponentModel.Composition;
 using AdvancedMiniMap.Utilities;
 using Ensage;
 using Ensage.SDK.Renderer;
-using Ensage.SDK.Renderer.DX11;
-using Ensage.SDK.Renderer.DX9;
 using Ensage.SDK.Service;
 using Ensage.SDK.Service.Metadata;
 
